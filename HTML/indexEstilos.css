@@ -27,6 +27,7 @@ body {
     margin: 0 auto;
 }
 
+/*Cambiar qu la barra de navgación sea del mismo tamaño que la cabecera en el ancho y si no ocupa toda la pantalla poner algo en los lados*/
 .cabecera {
     display: flex;
     align-items: center;
@@ -147,7 +148,7 @@ a[href^="http"]::after {
     width: 100%;
     min-height: 40vh;      
     border: 0;
-    border-radius: 2%;    
+    border-radius: 20px;    
 }
 
 /*Pie de página*/
@@ -156,7 +157,7 @@ footer {
     padding: 3%;                    
     background: var(--color-marron-oscuro);  
     color: var(--color-claro);
-    border-radius: 2%;               
+    border-radius: 20px;               
     text-align: center;                
     line-height: 140%;                 
 }
