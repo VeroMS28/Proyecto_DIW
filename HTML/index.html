@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- CAMBIADO: idioma a español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1: Duarte</title>
+    <meta name="description" content="Capítulo 1: Duarte es una librería y papelería donde podrás descubrir libros, participar en eventos literarios y disfrutar del amor por la lectura.">
+    <meta name="keywords" content="librería, libros, papelería, lectura, fantasía, eventos literarios, club de lectura, autores, catálogo de libros, Jaén">
+    <meta name="author" content="Verónica Martínez Serrano">
+
+    <!--Tipografías que he puesto en la guía de estilos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="indexEstilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!--Cabecera con el logo, título y subtítulo-->
+        <header class="cabecera">
+            <img src="images/Yellow Blue Simple Cute Book Store Logo.png" alt="Logo de Capítulo 1: Duarte">
+            <div> 
+                <h1>Capítulo 1: Duarte</h1>
+                <h2>Librería: Abre un libro, entra a otro mundo</h2>
+            </div>
+        </header>
+
+        <!--Menú de navegación-->
+        <nav class="navegacion">
+            <ul>
+                <li><a href="Papeleria.html">Presentación</a></li>
+                <li><a href="Catalogo.html">Catálogo</a></li>
+                <li><a href="Eventos.html">Eventos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="FormularioSolicitud.html">Formulario</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido">
+            <section>
+                <h1>Nuestra librería</h1>
+                <!--Pongo cita con su autora y fecha-->
+                <blockquote>
+                    <p>
+                        "La fantasía no es escapar de la realidad, sino una forma de comprenderla. 
+                        Los libros nos permiten viajar a otros mundos, conocer otras culturas y, sobre todo, 
+                        entender mejor nuestro propio mundo a través de los ojos de los demás. Cada historia es 
+                        una ventana que nos enseña a pensar, a soñar y a empatizar con quienes nos rodean." 
+                    </p>
+                    <cite>- Cornelia Funke</cite>
+                </blockquote>
+            </section>
+
+            <!--Imagen con un pie explicativo-->
+            <figure class="portada-libreria"> <!-- NUEVO: clase para estilos -->
+                <img src="images/libreria.jpg" alt="Interior de una librería acogedora">
+                <figcaption>Una librería así podrías montar con nuestra ayuda, cumple tu sueño.</figcaption>
+            </figure>
+
+            <section>
+                <h2>Catálogo</h2>
+                <p>Encuentra tus libros favoritos organizados por género, autor y novedades.</p>
+            </section>
+            <section>
+                <h2>Papelería</h2>
+                <p>Disponemos de una pequeña sección de papelería para que puedas disfrutar más aún de la lectura y 
+                    puedas acceder a recursos como marcadores, possits o cualquier cosa que puedas imaginar. 
+                </p>
+            </section>
+            <section>
+                <h2>Eventos</h2>
+                <p>Participa en nuestros clubes de lectura, firmas de autores y talleres creativos. Además de 
+                    picnics y bailes ambientados en temática fantástica para formar parte de mundos literarios.
+                </p>
+            </section>
+            <section>
+                <h2>Contacto</h2>
+                <p>Puedes escribirnos a nuestras redes sociales.</p>
+            </section>
+
+            <!--Barra lateral con enlaces de interés e información complementaria-->
+            <aside class="barra">
+                <h3>Enlaces de interés</h3>
+                <ul>
+                    <li><a href="https://www.unesco.org" class="externo">UNESCO</a> - Fomento de la lectura</li> 
+                    <li><a href="https://www.goodreads.com" class="externo">Goodreads</a> - Opiniones de libros</li>
+                </ul>
+                <h3>Novedades de la librería</h3>
+                <p>Este mes destacamos libros de fantasía y talleres de escritura creativa.</p>
+            </aside>
+        </main>
+
+        <!--Contenido multimedia-->
+        <section class="multimedia">
+            <!--Mapa interactivo incrustado desde un servicio externo-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.739691043378!2d-3.9082375!3d37.7705364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd02378562523%3A0x6e91f1bee9415d01!2sTorredelcampo%2C%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1730000000000!5m2!1ses!2ses">
+            </iframe>                
+        </section>
+
+        <!--Pie de página-->
+        <footer>
+            <p>Redactado por: <cite>Verónica Martínez Serrano</cite></p>
+            <!-- CAMBIADO: enlace de correo con mailto: -->
+            <p>Contacto: <a href="mailto:vmarser029@g.educaand.es">vmarser029@g.educaand.es</a></p>
+            <h3>Puedes seguirnos en nuestras redes</h3>
+            <a href="https://www.instagram.com/" class="externo">Instagram</a>
+            <a href="https://x.com/?lang=es" class="externo">X</a>
+            <a href="https://www.tiktok.com/es-419/" class="externo">Tik Tok</a>
+            <p>&copy; 2025 Capítulo 1: Duarcom/te. Todos los derechos reservados.</p>
+        </footer>
+    </div> <!-- fin wrapper -->
+</body>
+</html>
