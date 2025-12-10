@@ -1,0 +1,5 @@
+
+.catalogo{
+    background: var(--color-acento);
+    color: var(--color-claro) !important;
+}
