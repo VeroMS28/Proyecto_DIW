@@ -9,6 +9,9 @@
     --color-claro: #ffffff;    
 }
 
+/*Menú que indique en que pagina estoy y que salgan todas las opciones (inicio)*/
+/*Cosas que sean iguales ponerlas en un solo css y linkarlo en todas las páginas*/
+
 * {
     margin: 0;
     padding: 0;
@@ -70,15 +73,19 @@ body {
 .navegacion a {
     text-decoration: none;
     color: var(--color-marron-oscuro);
-    padding: 2%;    
+    padding: 10%;    
     border-radius: 8px;           
     transition: background-color 0.2s ease;
 }
 
-/* Pseudo-clase :hover */
 .navegacion a:hover{
     background: var(--color-acento);
     color: var(--color-claro);
+}
+
+.papeleria {
+    background: var(--color-acento);
+    color: var(--color-claro) !important;
 }
 
 .contenedorIntroduccion {

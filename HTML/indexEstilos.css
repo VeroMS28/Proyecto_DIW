@@ -75,7 +75,7 @@ body {
 .navegacion a {
     text-decoration: none;
     color: var(--color-marron-oscuro);
-    padding: 2%;    
+    padding: 10%;    
     border-radius: 8px;           
     transition: background-color 0.2s ease;
 }
@@ -83,6 +83,12 @@ body {
 .navegacion a:hover {
     background: var(--color-acento);
     color: var(--color-claro);
+}
+
+/*Esto cuando esté en esta página se quedará marcado para ver la página en la que me encuentro. También lo hará en las otras páginas*/
+.inicio {
+    background: var(--color-acento);
+    color: var(--color-claro) !important;
 }
 
 /*Aquí es donde voy a usar el grid*/
