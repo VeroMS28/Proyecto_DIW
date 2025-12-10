@@ -1,0 +1,139 @@
+/*Voy a poner los colores que he seleccionado en la guía de estilos*/
+:root {
+    --color-fondo: #f5eee6;       
+    --color-marron: #5c4033;     
+    --color-marron-oscuro: #3b2518; 
+    --color-acento: #b65c4d;    
+    --color-acento-suave: #e9b3a3;
+    --color-texto: #2b2b2b;     
+    --color-claro: #ffffff;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", system-ui, sans-serif;
+    color: #222;
+    background: linear-gradient(180deg, #f9f2e9, var(--color-fondo)); 
+}
+
+/*Aquí estoy centrando y cambiando el ancho*/
+.contenedor {
+    margin: 0 auto;
+    width: 95%;
+}
+
+/*Cambiar que la barra de navgación sea del mismo tamaño que la cabecera en el ancho y si no ocupa toda la pantalla poner algo en los lados*/
+.cabecera {
+    width: 100%;                        
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 2%;   
+    /*Esto hace que no haya márgenes laterales, el 0*/
+    margin: 2% 0;                      
+    background: var(--color-acento);
+    color: var(--color-claro);
+    font-family: "Playfair Display", serif;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera img {
+    width: 20%;
+    height: 20%;
+}
+
+/*Navegación principal, la que está debajo de la cabecera*/
+.navegacion {
+    width: 100%;                      
+    background: var(--color-acento-suave);
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2% 0;                
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Esto ahora se va a ver horizontal pero luego en pantallas más pequeñas vertical*/
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: var(--color-marron-oscuro);
+    padding: 10%;    
+    border-radius: 8px;           
+    transition: background-color 0.2s ease;
+}
+
+.navegacion a:hover {
+    background: var(--color-acento);
+    color: var(--color-claro);
+}
+
+footer {
+    width: 100%;                        
+    margin-top: 5%;                    
+    padding: 3%;                    
+    background: var(--color-marron-oscuro);  
+    color: var(--color-claro);
+    border-radius: 20px;               
+    text-align: center;                
+    line-height: 140%;    
+}
+
+footer a {
+    color: var(--color-acento-suave);
+    text-decoration: none;
+    transition: color 0.2s ease 0s; 
+}
+
+footer a:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+footer p,
+footer h3 {
+    margin-bottom: 2%;
+}
+
+/*Pantallas más pequeñas*/
+@media (max-width: 800px) {
+    .cabecera {
+        /*Aquí el logo lo pongo arriba*/
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecera img {
+        max-width: 40%;
+    }
+
+    .navegacion ul {
+        /*Aquí lo pongo como columna*/
+        flex-direction: column;   
+        align-items: center;       
+        gap: 3%;                
+    }
+
+    .navegacion a {
+        padding: 4%;             
+        display: block;         
+        text-align: center;
+    }
+}
