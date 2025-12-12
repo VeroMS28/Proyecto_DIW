@@ -10,9 +10,9 @@
     display: grid;
     /*Columna principal y aside*/
     grid-template-columns: 2fr 1fr; 
-    gap: 4%;                    
+    gap: 2rem;                    
     align-items: flex-start;
-    margin-top: 2%;                 
+    margin-top: 2rem;                 
 }
 
 blockquote {
@@ -20,6 +20,11 @@ blockquote {
     line-height: 180%;
     margin-top: 2%;
 }
+
+.portada-libreria{
+    overflow: hidden;
+}
+
 
 .portada-libreria img {
     max-width: 100%;
@@ -43,12 +48,14 @@ section p {
     margin-top: 2%;
 }
 
+/*Aquí he usado un gradiente*/
 .barra {
     background: #f7e9dc;
     padding: 2%;        
     border-radius: 2%; 
     margin-top: 2%;
     margin-bottom: 20%; 
+    background: linear-gradient(130deg,#f7e9dc 0%, var(--color-acento-suave) 100%);
 }
 
 /*Enlaces externos más destacados*/

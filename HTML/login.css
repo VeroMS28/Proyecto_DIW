@@ -1,31 +1,24 @@
-nav .contacto{
+.loginMantener{
     background: var(--color-acento);
     color: var(--color-claro) !important;
 }
 
 main.contacto{
     width: 95%;
-    margin: 0 auto 2%;
-    margin-top: 2%;
-}
-
-.intro{
-    background: #f7e9dc;
-    border-radius: 18px;
-    padding: 2%;
-    margin-top: 2%;
-    line-height: 1.7;
-    box-shadow: 6px 6px 6px rgba(0,0,0,0.05);
+    margin: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .formulario{
-    margin-top: 2.5%;
     background: var(--color-claro);
     border-radius: 18px;
     padding: 3%;
+    width: 100%;
+    max-width: 420px;
 }
 
-.formulario form{
+.login{
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
@@ -34,7 +27,7 @@ main.contacto{
 .campo{
     display: flex;
     flex-direction: column;
-    gap: 0.4em;
+    gap: 0.3em;
 }
 
 .campo label{
@@ -42,44 +35,54 @@ main.contacto{
     font-family: "Open Sans", sans-serif;
 }
 
-.campo input,
-.campo textarea{
-    padding: 1%;      
+.campo input{
+    padding: 3%;
     border-radius: 12px;
     border: 1px solid black;
-    width: 100%;
     font-family: "Open Sans", sans-serif;
     transition: border-color 0.2s ease;
 }
 
-.campo input:focus,
-.campo textarea:focus{
+.campo input:focus{
     outline: none;
     border-color: var(--color-acento);
 }
 
 .campo button{
+    margin-top: 0.5%;
     background: var(--color-acento);
     color: var(--color-claro);
     border: none;
     border-radius: 14px;
-    padding: 1%;
+    padding: 2%;
     cursor: pointer;
-    font-weight: bold;
     font-family: "Open Sans", sans-serif;
-    transition: filter 0.2s ease;
+    transition: filter 0.3s ease;
 }
 
-/*Le meto un filtro para que cuando tenga el hover esté más luminoso*/
 .campo button:hover{
-    filter: brightness(1.15);
+    filter: saturate(2.15);
 }
+
+.libroKeyframe{
+    position: absolute;
+    width: 10vw;
+    height: 20vh;
+    margin-left: 80%;    
+    animation: girar 6s linear infinite;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 @media (max-width: 800px){
-    .intro{
-        text-align: center;
-    }
-
     .formulario{
         padding: 6%;
     }

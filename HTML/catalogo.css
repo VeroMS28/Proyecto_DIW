@@ -6,7 +6,6 @@
 /*Contenedor principal de la página(igual que en papelería solo que con libros)*/
 .contenedorIntroduccion {
     width: 95%;
-    max-width: 1400px;
     margin: 0 auto 2%;
 }
 

@@ -1,5 +1,61 @@
-
 .eventos {
     background: var(--color-acento);
     color: var(--color-claro) !important;
+}
+
+.contenedorIntroduccion {
+    width: 95%;
+    margin: 0 auto 2%;
+}
+
+.intro-eventos {
+    background: #f7e9dc;
+    border-radius: 18px;
+    padding: 2%;
+    line-height: 1.7;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 2%;
+}
+
+.grid-eventos {
+    margin-top: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+.grid-eventos article {
+    background: var(--color-claro);
+    border-radius: 18px;
+    padding: 6%;
+}
+
+.evento-head h4 {
+    margin-bottom: 0.8rem;
+    font-family: "Playfair Display", serif;
+}
+
+.evento-info p {
+    margin: 2%;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nota {
+    margin-top: 2rem;
+    background: #f7e9dc;
+    border-radius: 18px;
+    padding: 2%;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .intro-eventos,
+    .nota {
+        text-align: center;
+    }
+
+    .grid-eventos {
+        grid-template-columns: 1fr;
+    }
 }
