@@ -1,5 +1,60 @@
-
-.catalogo{
+.catalogo {
     background: var(--color-acento);
     color: var(--color-claro) !important;
+}
+
+/*Contenedor principal de la página(igual que en papelería solo que con libros)*/
+.contenedorIntroduccion {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto 2%;
+}
+
+.intro {
+    background: #f7e9dc;
+    border-radius: 18px;
+    padding: 2%;
+    line-height: 1.7;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.productos {
+    margin-top: 3%;
+}
+
+.productos h2 {
+    margin-bottom: 2%;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+}
+
+.producto {
+    background: var(--color-claro);
+    border-radius: 18px;
+    padding: 6%;
+    text-align: center;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 8%;
+}
+
+@media (max-width: 800px) {
+    .intro,
+    .productos {
+        text-align: center;
+    }
+
+    .grid-productos {
+        gap: 4%;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

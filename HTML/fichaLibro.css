@@ -1,0 +1,106 @@
+.catalogo{
+    background: var(--color-acento);
+    color: var(--color-claro) !important;
+}
+
+.contenedorFicha{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.ficha{
+    width: 100%;
+}
+
+.volver{
+    display: inline-block;
+    margin: 2% 0;
+    padding: 1% 2%;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-acento-suave);
+    background: var(--color-marron-oscuro);
+    cursor: pointer;
+}
+
+.ficha-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4%;
+    margin-top: 2%;
+}
+
+.portada{
+    background: var(--color-claro);
+    border-radius: 18px;
+    padding: 6%;
+    text-align: center;
+    height: 80%;
+}
+
+.portada img{
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.precio{
+    margin-top: 6%;
+    display: inline-block;
+    font-family: "Playfair Display", serif;
+    font-size: 1.15em;
+    color: var(--color-marron-oscuro);
+}
+
+.info{
+    background: #f7e9dc;
+    border-radius: 18px;
+    padding: 4%;
+    height: 105%;
+}
+
+.titulo{
+    font-family: "Playfair Display", serif;
+    margin-bottom: 2%;
+}
+
+.sinopsis{
+    text-align: justify;
+    margin-bottom: 3%;
+}
+
+.info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 2%;
+}
+
+.info li{
+    background: var(--color-claro);
+    border-radius: 12px;
+    padding: 2%;
+}
+
+/*Responsive*/
+@media (max-width: 800px){
+    .ficha-grid{
+        grid-template-columns: 1fr;
+        gap: 3%;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .sinopsis{
+        text-align: justify;
+    }
+
+    .volver{
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto – Capítulo 1: Duarte</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="comun.css">
 </head>
+
 <body>
-    
+    <header class="cabecera">
+        <img src="images/Yellow Blue Simple Cute Book Store Logo.png" alt="Logo de Capítulo 1: Duarte">
+        <div>
+            <h1>Contacto</h1>
+            <h2>Escríbenos, estaremos encantados de leerte</h2>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Papeleria.html">Papelería</a></li>
+            <li><a href="Catalogo.html">Catálogo</a></li>
+            <li><a href="Eventos.html">Eventos</a></li>
+            <li><a href="Contacto.html" class="contacto">Contacto</a></li>
+            <li><a href="FormularioSolicitud.html">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <main class="contacto">
+        <section class="intro">
+            <h2>Formulario de contacto</h2>
+            <p>
+                Si tienes alguna duda, sugerencia o quieres información sobre nuestros libros y eventos,
+                puedes escribirnos a través de este formulario. Además, puedes encargar cualquier libro
+                proporcionando los datos necesarios.
+            </p>
+        </section>
+
+        <section class="formulario">
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Capítulo 1: Duarte. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes:</p>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/?lang=es">X</a>
+        <a href="https://www.tiktok.com/es-419/">Tik Tok</a>
+    </footer>
 </body>
 </html>
