@@ -28,7 +28,7 @@ main.contacto{
 .formulario form{
     display: flex;
     flex-direction: column;
-    gap: 1.1rem;
+    gap: 1.1em;
 }
 
 .campo{

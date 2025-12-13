@@ -31,7 +31,7 @@
 }
 
 .evento-head h4 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.7em;
     font-family: "Playfair Display", serif;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .nota {
-    margin-top: 2rem;
+    margin-top: 2em;
     background: #f7e9dc;
     border-radius: 18px;
     padding: 2%;

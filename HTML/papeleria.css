@@ -18,18 +18,18 @@
 }
 
 .productos {
-    margin-top: 2.5rem;
+    margin-top: 2.5em;
 }
 
 .productos h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
 }
 
 /*Grid para las tarjetas de productos*/
 .grid-productos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    gap: 2em;
 }
 
 .producto {
@@ -37,9 +37,7 @@
     border-radius: 18px;
     padding: 6%;
     text-align: center;
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.08);
-
-    /*Transición para un hover que va a hacer que se suban un poco y tener sombra*/
+    /*Transición para un hover que va a hacer que se agrande un poco y tener sombra*/
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -63,13 +61,23 @@
 
 /*Hover con la trasición de antes*/
 .producto:hover {
-    transform: translateY(-8px);
-    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px var(--color-acento);
 }
 
 @media (max-width: 800px) {
     .intro,
     .productos {
         text-align: center;
+    }
+
+    .producto {
+        background: var(--color-claro);
+        border-radius: 18px;
+        padding: 6%;
+        text-align: center;
+        /*Transición para un hover que va a hacer que se agrande un poco y tener sombra*/
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 110%;
     }
 }

@@ -10,9 +10,9 @@
     display: grid;
     /*Columna principal y aside*/
     grid-template-columns: 2fr 1fr; 
-    gap: 2rem;                    
+    gap: 2em;                    
     align-items: flex-start;
-    margin-top: 2rem;                 
+    margin-top: 2em;                 
 }
 
 blockquote {
@@ -82,7 +82,7 @@ a[href^="http"]::after {
     border-radius: 20px;    
 }
 
-/*Pantallas más pequeñas*/
+/*Pantallas más pequeñas de máximo 800px como lo estoy poniendo en todas*/
 @media (max-width: 800px) {
     .contenido {
         grid-template-columns: 1fr; 

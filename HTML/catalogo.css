@@ -36,7 +36,7 @@
     border-radius: 18px;
     padding: 6%;
     text-align: center;
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 6px 6px 10px #5c4033;
 }
 
 .producto img {
@@ -55,5 +55,11 @@
     .grid-productos {
         gap: 4%;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Le he tenido que poner aquí el important porque sino se ponían las tarjetas encima 
+    y no salía al tener como prioridad el común*/
+    footer {
+        margin-top: 50% !important;
     }
 }
