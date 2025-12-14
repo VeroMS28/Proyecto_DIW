@@ -67,7 +67,7 @@
 }
 
 .sinopsis{
-    text-align: justify;
+    text-align: left;
     margin-bottom: 3%;
 }
 
@@ -97,7 +97,7 @@
     }
 
     .sinopsis{
-        text-align: justify;
+        text-align: left;
     }
 
     .volver{
