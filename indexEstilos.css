@@ -16,7 +16,7 @@
 }
 
 blockquote {
-    text-align: justify;
+    text-align: left;
     line-height: 180%;
     margin-top: 2%;
 }
@@ -39,7 +39,7 @@ blockquote {
 }
 
 section {
-    text-align: justify;
+    text-align: left;
     line-height: 180%;
     margin-top: 2%;
 }
