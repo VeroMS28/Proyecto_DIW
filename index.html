@@ -91,6 +91,26 @@
                 <h3>Novedades de la librería</h3>
                 <p>Este mes destacamos libros de fantasía y talleres de escritura creativa.</p>
             </aside>
+
+            <section>
+                <h2>Todo lo que te ofrece la lectura</h2>
+                <h4>Poder ver y editar vídeos con los que aprenderás mucho.</h4>
+                <div>
+                    <video controls>
+                        <source src="multimediaNuevo/5-beneficios-de-la-lectura-científicamente-probados (1).mp4">
+                    </video>
+                    <video controls>
+                        <source src="multimediaNuevo/clideo_editor_793e1a32adc442128dd1e8a1d76f15c0.mp4">
+                    </video><br>
+                    <h4>Aprender a editar imágenes</h4>
+                    <img src="multimediaNuevo/librosSinEditar.jpg" alt="">
+                    <img src="multimediaNuevo/librosGimp.jpg" alt=""><br>
+                    <h4>Aprender muchas más cosas</h4><br>
+                    <canvas id="libroCanvas" width="320" height="220"></canvas>
+
+                </div>
+            </section>
+            
         </main>
 
         <!--Contenido multimedia-->
@@ -115,3 +135,47 @@
     </div>
 </body>
 </html>
+
+<script>
+    const canvas = document.getElementById("libroCanvas");
+    const ctx = canvas.getContext("2d");
+
+    //Página izquierda
+    ctx.strokeRect(40, 40, 120, 140);
+
+    //Página derecha
+    ctx.strokeRect(160, 40, 120, 140);
+
+    //Arco superior izquierdo
+    ctx.beginPath();
+    ctx.arc(100, 40, 60, Math.PI, 0);
+    ctx.stroke();
+
+    //Arco superior derecho
+    ctx.beginPath();
+    ctx.arc(220, 40, 60, Math.PI, 0);
+    ctx.stroke();
+
+    //Arco inferior izquierdo
+    ctx.beginPath();
+    ctx.arc(100, 180, 60, 0, Math.PI);
+    ctx.stroke();
+
+    //Arco inferior derecho
+    ctx.beginPath();
+    ctx.arc(220, 180, 60, 0, Math.PI);
+    ctx.stroke();
+
+    //Líneas de texto (solo izquierda)
+    ctx.beginPath();
+    ctx.moveTo(65, 80);
+    ctx.lineTo(135, 80);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(65, 100);
+    ctx.lineTo(135, 100);
+    ctx.stroke();
+</script>
+
+
