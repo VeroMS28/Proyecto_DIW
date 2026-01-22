@@ -13,13 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="indexEstilos.css">
-    <link rel="stylesheet" href="comun.css">
+    <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <div class="contenedor">
+    <div>
         <!--Cabecera con el logo, título y subtítulo-->
-        <header class="cabecera">
+        <header class="bg-[#b65c4d]">
             <img src="images/Yellow Blue Simple Cute Book Store Logo.png" alt="Logo de Capítulo 1: Duarte">
             <div> 
                 <h1>Capítulo 1: Duarte</h1>
@@ -28,10 +27,10 @@
         </header>
 
         <!--Menú de navegación-->
-        <nav class="navegacion">
+        <nav class="bg-[#e9b3a3]">
             <ul>
-                <li><a href="login.html" class="loginMantener">Login</a></li>
-                <li><a href="index.html" class="inicio">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="Papeleria.html">Papelería</a></li>
                 <li><a href="Catalogo.html">Catálogo</a></li>
                 <li><a href="Eventos.html">Eventos</a></li>
@@ -39,7 +38,7 @@
             </ul>
         </nav>
 
-        <main class="contenido">
+        <main>
             <section>
                 <h1>Nuestra librería</h1>
                 <!--Pongo cita con su autora y fecha-->
@@ -55,7 +54,7 @@
             </section>
 
             <!--Imagen con un pie explicativo-->
-            <figure class="portada-libreria"> <!-- NUEVO: clase para estilos -->
+            <figure>
                 <img src="images/libreria.jpg" alt="">
                 <figcaption>Una librería así podrías montar con nuestra ayuda, cumple tu sueño.</figcaption>
             </figure>
@@ -82,39 +81,20 @@
             </section>
 
             <!--Barra lateral con enlaces de interés e información complementaria-->
-            <aside class="barra">
+            <aside>
                 <h3>Enlaces de interés</h3>
                 <ul>
-                    <li><a href="https://www.unesco.org" class="externo">UNESCO</a> - Fomento de la lectura</li> 
-                    <li><a href="https://www.goodreads.com" class="externo">Goodreads</a> - Opiniones de libros</li>
+                    <li><a href="https://www.unesco.org">UNESCO</a> - Fomento de la lectura</li> 
+                    <li><a href="https://www.goodreads.com">Goodreads</a> - Opiniones de libros</li>
                 </ul>
                 <h3>Novedades de la librería</h3>
                 <p>Este mes destacamos libros de fantasía y talleres de escritura creativa.</p>
             </aside>
-
-            <section>
-                <h2>Todo lo que te ofrece la lectura</h2>
-                <h4>Poder ver y editar vídeos con los que aprenderás mucho.</h4>
-                <div>
-                    <video controls>
-                        <source src="multimediaNuevo/5-beneficios-de-la-lectura-científicamente-probados (1).mp4">
-                    </video>
-                    <video controls>
-                        <source src="multimediaNuevo/clideo_editor_793e1a32adc442128dd1e8a1d76f15c0.mp4">
-                    </video><br>
-                    <h4>Aprender a editar imágenes</h4>
-                    <img src="multimediaNuevo/librosSinEditar.jpg" alt="">
-                    <img src="multimediaNuevo/librosGimp.jpg" alt=""><br>
-                    <h4>Aprender muchas más cosas</h4><br>
-                    <canvas id="libroCanvas" width="320" height="220"></canvas>
-
-                </div>
-            </section>
             
         </main>
 
         <!--Contenido multimedia-->
-        <section class="multimedia">
+        <section>
             <!--Mapa interactivo incrustado desde un servicio externo-->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.739691043378!2d-3.9082375!3d37.7705364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd02378562523%3A0x6e91f1bee9415d01!2sTorredelcampo%2C%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1730000000000!5m2!1ses!2ses"
@@ -123,59 +103,15 @@
         </section>
 
         <!--Pie de página-->
-        <footer>
+        <footer class="bg-[#3b2518]">
             <p>Redactado por: <cite>Verónica Martínez Serrano</cite></p>
             <p>Contacto: <a href="mailto:vmarser029@g.educaand.es">vmarser029@g.educaand.es</a></p>
             <h3>Puedes seguirnos en nuestras redes</h3>
-            <a href="https://www.instagram.com/" class="externo">Instagram</a>
-            <a href="https://x.com/?lang=es" class="externo">X</a>
-            <a href="https://www.tiktok.com/es-419/" class="externo">Tik Tok</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://x.com/?lang=es">X</a>
+            <a href="https://www.tiktok.com/es-419/">Tik Tok</a>
             <p>&copy; 2025 Capítulo 1: Duarte. Todos los derechos reservados.</p>
         </footer>
     </div>
 </body>
 </html>
-
-<script>
-    const canvas = document.getElementById("libroCanvas");
-    const ctx = canvas.getContext("2d");
-
-    //Página izquierda
-    ctx.strokeRect(40, 40, 120, 140);
-
-    //Página derecha
-    ctx.strokeRect(160, 40, 120, 140);
-
-    //Arco superior izquierdo
-    ctx.beginPath();
-    ctx.arc(100, 40, 60, Math.PI, 0);
-    ctx.stroke();
-
-    //Arco superior derecho
-    ctx.beginPath();
-    ctx.arc(220, 40, 60, Math.PI, 0);
-    ctx.stroke();
-
-    //Arco inferior izquierdo
-    ctx.beginPath();
-    ctx.arc(100, 180, 60, 0, Math.PI);
-    ctx.stroke();
-
-    //Arco inferior derecho
-    ctx.beginPath();
-    ctx.arc(220, 180, 60, 0, Math.PI);
-    ctx.stroke();
-
-    //Líneas de texto (solo izquierda)
-    ctx.beginPath();
-    ctx.moveTo(65, 80);
-    ctx.lineTo(135, 80);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(65, 100);
-    ctx.lineTo(135, 100);
-    ctx.stroke();
-</script>
-
-

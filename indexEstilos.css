@@ -82,10 +82,6 @@ a[href^="http"]::after {
     border-radius: 20px;    
 }
 
-video {
-    width: 500px;
-}
-
 /*Pantallas más pequeñas de máximo 800px como lo estoy poniendo en todas*/
 @media (max-width: 800px) {
     .contenido {
