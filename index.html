@@ -18,29 +18,29 @@
 <body>
     <div>
         <!--Cabecera con el logo, título y subtítulo-->
-        <header class="bg-[#b65c4d]">
-            <img src="images/Yellow Blue Simple Cute Book Store Logo.png" alt="Logo de Capítulo 1: Duarte">
-            <div> 
-                <h1 class="text-white font-bold">Capítulo 1: Duarte</h1>
-                <h2 class="text-white font-bold">Librería: Abre un libro, entra a otro mundo</h2>
+        <header class="bg-[#b65c4d] rounded-xl m-10 flex">
+            <img src="images/Yellow Blue Simple Cute Book Store Logo.png" alt="Logo de Capítulo 1: Duarte" class="w-100 h-100 p-10">
+            <div class="text-white font-bold text-4xl mt-50"> 
+                <h1>Capítulo 1: Duarte</h1>
+                <h2>Librería: Abre un libro, entra a otro mundo</h2>
             </div>
         </header>
 
         <!--Menú de navegación-->
-        <nav class="bg-[#e9b3a3]">
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Papeleria.html">Papelería</a></li>
-                <li><a href="Catalogo.html">Catálogo</a></li>
-                <li><a href="Eventos.html">Eventos</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
+        <nav class="bg-[#e9b3a3] rounded-xl m-10 h-20">
+            <ul class="flex">
+                <li class="m-auto mt-8 hover:bg-[#b65c4d]/50 hover:rounded-xl hover:p-2 hover:text-white"><a href="login.html">Login</a></li>
+                <li class="m-auto mt-8 hover:bg-[#b65c4d]/50 hover:rounded-xl hover:p-2 hover:text-white bg-[#b65c4d] rounded-xl p-2 text-white"><a href="index.html">Inicio</a></li>
+                <li class="m-auto mt-8 hover:bg-[#b65c4d]/50 hover:rounded-xl hover:p-2 hover:text-white"><a href="Papeleria.html">Papelería</a></li>
+                <li class="m-auto mt-8 hover:bg-[#b65c4d]/50 hover:rounded-xl hover:p-2 hover:text-white"><a href="Catalogo.html">Catálogo</a></li>
+                <li class="m-auto mt-8 hover:bg-[#b65c4d]/50 hover:rounded-xl hover:p-2 hover:text-white"><a href="Eventos.html">Eventos</a></li>
+                <li class="m-auto mt-8 hover:bg-[#b65c4d]/50 hover:rounded-xl hover:p-2 hover:text-white"><a href="Contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <main>
+        <main class="p-10">
             <section>
-                <h1>Nuestra librería</h1>
+                <h1 class="font-bold text-4xl mb-8">Nuestra librería</h1>
                 <!--Pongo cita con su autora y fecha-->
                 <blockquote>
                     <p>
@@ -54,35 +54,37 @@
             </section>
 
             <!--Imagen con un pie explicativo-->
-            <figure>
-                <img src="images/libreria.jpg" alt="">
-                <figcaption>Una librería así podrías montar con nuestra ayuda, cumple tu sueño.</figcaption>
-            </figure>
+            <div class="flex justify-end">
+                <figure class="w-150 h-100 mr-10">
+                    <img src="images/libreria.jpg" alt="">
+                    <figcaption class="mt-5">Una librería así podrías montar con nuestra ayuda, cumple tu sueño.</figcaption>
+                </figure>
+            </div>
 
-            <section>
-                <h2>Catálogo</h2>
+            <section class="mb-5">
+                <h2 class="font-bold text-2xl">Catálogo</h2>
                 <p>Encuentra tus libros favoritos organizados por género, autor y novedades.</p>
             </section>
-            <section>
-                <h2>Papelería</h2>
+            <section class="mb-5">
+                <h2 class="font-bold text-2xl">Papelería</h2>
                 <p>Disponemos de una pequeña sección de papelería para que puedas disfrutar más aún de la lectura y 
                     puedas acceder a recursos como marcadores, possits o cualquier cosa que puedas imaginar. 
                 </p>
             </section>
-            <section>
-                <h2>Eventos</h2>
+            <section  class="mb-5">
+                <h2 class="font-bold text-2xl">Eventos</h2>
                 <p>Participa en nuestros clubes de lectura, firmas de autores y talleres creativos. Además de 
                     picnics y bailes ambientados en temática fantástica para formar parte de mundos literarios.
                 </p>
             </section>
-            <section>
-                <h2>Contacto</h2>
+            <section  class="mb-5">
+                <h2 class="font-bold text-2xl">Contacto</h2>
                 <p>Puedes escribirnos a nuestras redes sociales.</p>
             </section>
 
             <!--Barra lateral con enlaces de interés e información complementaria-->
-            <aside>
-                <h3>Enlaces de interés</h3>
+            <aside class="bg-[#e9b3a3] mt-10 p-6 bg-gradient-to-r from-[#e9b3a3] to-[#b65c4d]">
+                <h3 class="font-bold">Enlaces de interés</h3>
                 <ul>
                     <li><a href="https://www.unesco.org">UNESCO</a> - Fomento de la lectura</li> 
                     <li><a href="https://www.goodreads.com">Goodreads</a> - Opiniones de libros</li>
@@ -94,22 +96,23 @@
         </main>
 
         <!--Contenido multimedia-->
-        <section>
+        <section class="p-10">
             <!--Mapa interactivo incrustado desde un servicio externo-->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.739691043378!2d-3.9082375!3d37.7705364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd02378562523%3A0x6e91f1bee9415d01!2sTorredelcampo%2C%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1730000000000!5m2!1ses!2ses"
-                title="Mapa de Torredelcampo donde estará la librería">
+                title="Mapa de Torredelcampo donde estará la librería" 
+                class="w-full h-50">
             </iframe>                
         </section>
 
         <!--Pie de página-->
-        <footer class="bg-[#3b2518]">
-            <p>Redactado por: <cite>Verónica Martínez Serrano</cite></p>
-            <p>Contacto: <a href="mailto:vmarser029@g.educaand.es">vmarser029@g.educaand.es</a></p>
+        <footer class="bg-[#3b2518] rounded-xl m-10 h-40 text-white text-center">
+            <p class="p-2">Redactado por: <cite>Verónica Martínez Serrano</cite></p>
+            <p>Contacto: <a href="mailto:vmarser029@g.educaand.es" class="text-[#e9b3a3]">vmarser029@g.educaand.es</a></p>
             <h3>Puedes seguirnos en nuestras redes</h3>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://x.com/?lang=es">X</a>
-            <a href="https://www.tiktok.com/es-419/">Tik Tok</a>
+            <a href="https://www.instagram.com/" class="text-[#e9b3a3]">Instagram</a>
+            <a href="https://x.com/?lang=es" class="text-[#e9b3a3]">X</a>
+            <a href="https://www.tiktok.com/es-419/" class="text-[#e9b3a3]">Tik Tok</a>
             <p>&copy; 2025 Capítulo 1: Duarte. Todos los derechos reservados.</p>
         </footer>
     </div>
